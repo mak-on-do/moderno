@@ -353,6 +353,7 @@
 // end header
 // start modal
 #modal {
+    display: none;
     background-color: $green;
     max-width: 730px;
     width: 100%;
@@ -1567,6 +1568,38 @@ button.icon-unsorted {
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
+    .jq-selectbox {
+        width: 100%;
+    }
+    .jq-selectbox__select {
+        height: 25px;
+        padding: 0px 25px 0 10px;
+        border: 1px solid #d7d7d7;
+        border-bottom-color: #d7d7d7;
+        border-radius: 0px;
+        background: #ffffff;
+        box-shadow: none;
+        font-family: 'Roboto-Regular', sans-serif;
+        color: #70838d;
+        text-shadow: none;
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .jq-selectbox__trigger-arrow {
+        border: none;
+        top: 0;
+        right: 16px;
+        line-height: 23px;
+        font-size: 13px;
+        color: $green;
+        &::before {
+            font-family: 'icomoon';
+            content: "\f0d7"
+        }
+    }
+    .jq-selectbox__trigger {
+        border-left: none;
+    }
 }
 
 .price__product {
